@@ -1,0 +1,130 @@
+/* Varsayılan Tarayıcı Stilleri için Ayarlamalar */
+*,
+*::before,
+*::after {
+    /* Tüm elemanların box model davranışını ayarla */
+    box-sizing: border-box;
+}
+
+body {
+    /* Genel font ailesi ve satır yüksekliği tanımlamaları */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #a3a2a2; /* Arka plan rengini belirler */
+    margin: 0;
+    padding: 0;
+}
+
+/* Ana Başlık Alanı Stilleri */
+.main-header {
+    background: #333; /* Arka plan rengi */
+    color: #fff; /* Yazı rengi */
+    padding: 1rem; /* Kenar içeriği */
+    text-align: center; /* Metin hizalaması */
+}
+
+/* Navigasyon Menüsü Stilleri */
+.navigation {
+    display: flex; /* Esnek kutu modeli */
+    justify-content: center; /* Ortala */
+    list-style: none; /* Liste stili yok */
+    margin: 0; /* Dış boşluk yok */
+    padding: 0; /* İç boşluk yok */
+}
+
+.navigation li {
+    margin: 0 10px; /* Menü elemanları arası boşluk */
+}
+
+.navigation a {
+    color: #fff; /* Yazı rengi */
+    text-decoration: none; /* Alt çizgi yok */
+}
+
+/* Giriş Bölümü Stilleri */
+.intro {
+    padding: 20px; /* İç boşluk */
+    background: #f9f9f9; /* Arka plan rengi */
+    border-radius: 8px; /* Köşe yumuşatma */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+    margin: 20px 0; /* Dış boşluk */
+}
+
+.intro h2, .intro h3, .intro h4 {
+    color: #333; /* Yazı rengi */
+    margin-bottom: 10px; /* Alt boşluk */
+}
+
+.intro ol {
+    margin-left: 20px; /* Sol dış boşluk */
+    padding-left: 10px; /* İç boşluk */
+}
+
+.intro li {
+    margin-bottom: 8px; /* Liste elemanları arası boşluk */
+}
+
+/* Ana Başlık Stilleri */
+.main-header {
+    background-color: #000; /* Arka plan rengini siyah yap */
+    color: #fff; /* Yazı rengini beyaz yap */
+    text-align: center; /* Metni ortala */
+    padding: 20px 10px; /* Kenar içeriği */
+}
+
+.main-header h1 {
+    margin: 0; /* Kenar boşluğu yok */
+    font-size: 2.5em; /* Yazı boyutunu belirle */
+}
+
+.main-header p {
+    font-size: 1.2em; /* Yazı boyutunu belirle */
+}
+
+/* Navigasyon Menüsü */
+.navigation {
+    list-style: none; /* Liste stili yok */
+    padding: 0; /* İç boşluk yok */
+    display: flex; /* Esnek kutu modeli */
+    justify-content: center; /* Ortala */
+    margin: 0; /* Dış boşluk yok */
+}
+
+.navigation li {
+    margin: 0 15px; /* Menü elemanları arası boşluk */
+}
+
+.navigation a {
+    text-decoration: none; /* Alt çizgi yok */
+    color: #fff; /* Yazı rengi */
+    font-weight: bold; /* Kalın yazı */
+    transition: color 0.3s; /* Renk geçişi efekti */
+}
+
+.navigation a:hover {
+    color: #f4a261; /* Üzerine gelindiğinde renk değiştir */
+}
+
+.navigation a:focus {
+    outline: 2px solid #f4a261; /* Klavye gezintisi için odak durumu */
+}
+
+/* İçerik Sarmalayıcı */
+.content-wrapper {
+    padding: 20px; /* Kenar içeriği */
+}
+
+/* Mobil ve Tabletler için Uyarlamalar */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2em; /* Daha küçük ekranlar için yazı boyutu */
+    }
+
+    .navigation li {
+        margin: 0 10px; /* Daha dar boşluk */
+    }
+
+    .content-wrapper {
+        padding: 10px; /* Kenar içeriğini azalt */
+    }
+}
